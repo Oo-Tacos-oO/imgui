@@ -21,14 +21,13 @@ project "ImGui"
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
 		"imstb_truetype.h",
-		"imgui_demo.cpp"
 	}
 	removefiles {
 		"**.vs*/**"
 	}
 
 	includedirs {
-		"src"
+		"./"
 	}
 
 	defines {
@@ -40,9 +39,9 @@ project "ImGui"
 
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "on"
+		optimize "speed"
 
 	filter "configurations:Distribution"
 		runtime "Release"
-		optimize "on"
+		optimize "speed"
         symbols "off"
