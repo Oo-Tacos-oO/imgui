@@ -21,6 +21,13 @@ project "ImGui"
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
 		"imstb_truetype.h",
+
+        "imgui_stacklayout_internal.h",
+        "imgui_stacklayout.h",
+        "imgui_stacklayout.cpp",
+
+        --to remove? only used to show demo widgets and tweak style during runtime
+        "imgui_demo.cpp",
 	}
 	removefiles {
 		"**.vs*/**"
